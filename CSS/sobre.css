@@ -1,0 +1,58 @@
+
+section.sobre{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("../IMG/Sobre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div.sobreDiv1{
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+}
+
+div.sobreDiv1 iframe{
+    border-style: solid;
+    border-width: 7px;
+    border-color: yellow;
+    border-radius: 45px;
+    width: 60%;
+}
+
+div.TitleText{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding-right: 5%;
+}
+
+section.Principios{
+    background-color: rgb(255, 251, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    list-style-type:none;
+    display: flex;
+    border:1px solid #c0c0c0;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+}
+
+section.Principios p{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
