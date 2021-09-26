@@ -1,123 +1,179 @@
-header.header {
-    background: #0D1321;
-    display: flex;
-    height: 140px;
-    min-width: 120px;
-    align-items: center;
+/* Geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li {
+    font-size: 14px;
+}
+
+/* Barra de Navegação */
+header, .navbar {
+    background-color: #0D1321;
     color: #0D1321;
-    text-shadow: #000 0 0 .2em;
-    justify-content: space-between;
-}
-.logo{
-    max-width: 50%;
-    height: auto;
-    transition: all ease-in-out 0.3s;
-}
-.logo:hover{
-    max-width: 52%;
-}
-.menu {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
-    list-style-type:none;
-    display: flex;
-    /*border:1px solid #c0c0c0;*/
-    padding-left: 0px;
-    padding-right: 3%;
 }
 
-.menu li{
-    list-style-type:none;
-    position:relative;
-    border-right:1px solid #c0c0c0;
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
-.menu li a{color:rgb(255, 255, 255); text-decoration:none; padding:5px 10px; display:block;}
+#logo{
+    width: 210px;
+}
 
-.menu li a:hover{
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+    /*background-color: #0D1321;*/
+}
+
+#navbar-links a:hover {
+    color: #000;
+    /*background-color: #0D1321;*/
+}
+
+.pai:hover {
     background:rgb(255, 251, 0);
-    color:rgb(0, 0, 0);
 }
 
-.menu li ul{
-    position:absolute;
-    background-color:#0D1321;
-    display:none;
+.dropdown-menu {
+    background-color: #0D1321;
+    padding: 0;
+    text-align: center;
+    left: 1031px;
+    min-width: 9rem;
+    margin: 0;
 }
 
-.menu li:hover ul, .menu li.over ul{display:block; padding-left: 0px;}
-
-.menu li ul li{
-    border:1px solid #c0c0c0;
-    display:block;
-    width:200px;
+.dropdown-menu .nav-item:hover {
+    background:rgb(255, 251, 0);
 }
 
-section.bem-vindo{
+.navbar-expand-lg .navbar-nav .navbar-link {
+    padding: 1rem .8rem;
+}
+
+/* Home */
+#home .container-fluid {
+    padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("../IMG/BackBemvindo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: auto;
-    float: left;
 }
 
-div.bem-vindoDiv1{
-    padding-top: 5%;
-    padding-bottom: 5%;
+#home .main-title {
+    color: white;
+    margin: 65px 0 65px 0;
+    font-size: 40px;
+    text-align: center;
 }
 
-div.bem-vindoDiv2{
-    padding-left: 8%;
-    padding-right: 10%;
-    display: flex;
-    flex-direction: row;
+#home .main-title::after {
+    content: "";
+    border-top: 2px solid white;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+    margin: 65px 0 0 0;
 }
 
-div.bem-vindo{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size: x-large;
-    display: flex;
-    width: 40%;
-    flex-direction: column;
+.home-title {
+    /*font-size: 17px;*/
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#home-area p {
+    color: white;
+    font-size: 20px;
 }
 
-div.fotobem-vindo{
-    padding-top: 5%;
-    padding-left: 15%;
-    width: 30%;
-}
-
-div.fotobem-vindo img{
+.FotoSobre {
     border-style: solid;
     border-width: 7px;
     border-color: yellow;
-    width: 150%;
-    height: auto;
     border-radius: 45px;
 }
 
-section.rodape{
+/* Roda Pé */
+#contact-area {
     background-color: #0D1321;
-    width: 100%;
-}
-div.LogoRod{
-    justify-content: center;
-    align-items: center;
 }
 
-div.LogoRod img{
-    padding-top: 2%;
-    padding-left: 45%;
-    width: 10%;
+.LogoRod img{
+    width: 100px;
+    padding: 0;
+    position: absolute;
+    left: 45.8%;
+    margin: -50px 0 0 0;
 }
-div.Social{
-    padding-top: 10px;
-    padding-bottom: 2%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#Social{
+    position: absolute;
+    left: 46%;
+    margin: 55px 0 0 0;
 }
 
+#copy-area .container{
+    padding: 15px 0;
+    text-align: center;
+}
+
+#copy-area p {
+    color: white;
+    font-size: 12px;
+    padding: 0 0 1px 0;
+}
+
+/* Resposive */
+@media(max-width: 768px) {
+    .LogoRod img{
+        left: 43.5%;
+    }
+    #Social{
+        left: 43.7%;
+    }
+}
+
+@media(max-width: 425px) {
+    .LogoRod img{
+        left: 39.2%;
+    }
+    #Social{
+        left: 39.4%;
+    }
+    #home .main-title::after {
+        margin: 115px 0 0 0;
+    }
+}
+
+@media(max-width: 375px) {
+    .LogoRod img{
+        left: 37.9%;
+    }
+    #Social{
+        left: 38.1%;
+    }
+}
+
+@media(max-width: 320px) {
+    .LogoRod img{
+        left: 35.9%;
+    }
+    #Social{
+        left: 36.1%;
+    }
+}
