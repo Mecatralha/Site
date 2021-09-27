@@ -1,0 +1,179 @@
+/* Geral */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.row {
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li {
+    font-size: 14px;
+}
+
+/* Barra de Navegação */
+header, .navbar {
+    background-color: #0D1321;
+    color: #0D1321;
+}
+
+#nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 210px;
+}
+
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #fff;
+    /*background-color: #0D1321;*/
+}
+
+#navbar-links a:hover {
+    color: #000;
+    /*background-color: #0D1321;*/
+}
+
+.pai:hover {
+    background:rgb(255, 251, 0);
+}
+
+.dropdown-menu {
+    background-color: #0D1321;
+    padding: 0;
+    text-align: center;
+    left: 1031px;
+    min-width: 9rem;
+    margin: 0;
+}
+
+.dropdown-menu .nav-item:hover {
+    background:rgb(255, 251, 0);
+}
+
+.navbar-expand-lg .navbar-nav .navbar-link {
+    padding: 1rem .8rem;
+}
+
+/* Home */
+#home .container-fluid {
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90)), url("../IMG/BackBemvindo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home .main-title {
+    color: white;
+    margin: 65px 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+#home .main-title::after {
+    content: "";
+    border-top: 2px solid white;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+    margin: 65px 0 0 0;
+}
+
+.home-title {
+    /*font-size: 17px;*/
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#home-area p {
+    color: white;
+    font-size: 20px;
+}
+
+.FotoSobre {
+    border-style: solid;
+    border-width: 7px;
+    border-color: yellow;
+    border-radius: 45px;
+}
+
+/* Roda Pé */
+#contact-area {
+    background-color: #0D1321;
+}
+
+.LogoRod img{
+    width: 100px;
+    padding: 0;
+    position: absolute;
+    left: 45.8%;
+    margin: -50px 0 0 0;
+}
+#Social{
+    position: absolute;
+    left: 46%;
+    margin: 55px 0 0 0;
+}
+
+#copy-area .container{
+    padding: 15px 0;
+    text-align: center;
+}
+
+#copy-area p {
+    color: white;
+    font-size: 12px;
+    padding: 0 0 1px 0;
+}
+
+/* Resposive */
+@media(max-width: 768px) {
+    .LogoRod img{
+        left: 43.5%;
+    }
+    #Social{
+        left: 43.7%;
+    }
+}
+
+@media(max-width: 425px) {
+    .LogoRod img{
+        left: 39.2%;
+    }
+    #Social{
+        left: 39.4%;
+    }
+    #home .main-title::after {
+        margin: 115px 0 0 0;
+    }
+}
+
+@media(max-width: 375px) {
+    .LogoRod img{
+        left: 37.9%;
+    }
+    #Social{
+        left: 38.1%;
+    }
+}
+
+@media(max-width: 320px) {
+    .LogoRod img{
+        left: 35.9%;
+    }
+    #Social{
+        left: 36.1%;
+    }
+}
