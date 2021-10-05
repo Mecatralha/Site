@@ -118,12 +118,10 @@ header, .navbar {
     width: 100px;
     padding: 0;
     position: absolute;
-    left: 45.8%;
     margin: -50px 0 0 0;
 }
 #Social{
     position: absolute;
-    left: 46%;
     margin: 55px 0 0 0;
 }
 
@@ -139,41 +137,8 @@ header, .navbar {
 }
 
 /* Resposive */
-@media(max-width: 768px) {
-    .LogoRod img{
-        left: 43.5%;
-    }
-    #Social{
-        left: 43.7%;
-    }
-}
-
 @media(max-width: 425px) {
-    .LogoRod img{
-        left: 39.2%;
-    }
-    #Social{
-        left: 39.4%;
-    }
     #home .main-title::after {
         margin: 115px 0 0 0;
-    }
-}
-
-@media(max-width: 375px) {
-    .LogoRod img{
-        left: 37.9%;
-    }
-    #Social{
-        left: 38.1%;
-    }
-}
-
-@media(max-width: 320px) {
-    .LogoRod img{
-        left: 35.9%;
-    }
-    #Social{
-        left: 36.1%;
     }
 }

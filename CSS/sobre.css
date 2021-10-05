@@ -82,12 +82,6 @@
 
 /* Responsivo */
 @media(max-width: 425px) {
-    .LogoRod img{
-        left: 39.2%;
-    }
-    #Social{
-        left: 39.4%;
-    }
     #proposito .main-title::after {
         margin: 55px 0 0 0;
     }
